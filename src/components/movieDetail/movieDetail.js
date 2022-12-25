@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import './MovieDetail.scss'
+import './movieDetail.scss'
 import { useParams } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import {
   fetchAsyncMovieOrShowDetail,
   getSelectedMovieOrShow,
   removeSelectedMovieOrShow,
-} from '../../features/movies/movieSlice'
+} from '../features/movies/movieSlice'
 
 const MovieDetail = () => {
   const { imdbID } = useParams()
